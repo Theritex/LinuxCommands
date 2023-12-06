@@ -1,0 +1,39 @@
+LDAP Teoría:
+
+Esto es un dominio:
+
+    Dominio
+    ├── servidor
+    └── Red
+        ├── Almacenamiento
+        └── Clientes
+            ├── Usuario 1
+            ├── Usuario 2
+            └── Usuario 3
+
+la información solo estará en un punto 8facilidad de adminitración
+Dentro de un dominio puede haber subdominios
+
+
+primera práctica: instalación NFS (permite que un directorio de un servidor, pueda ser montado en el dispositivo cliente).
+segunda práctica: instalacion openldap (es la estructura donde se almacena la información [en el servidor]).
+    LDAP cuenta con una estructura raíz, con nodos (directorios), cada nodo es un punto donde se guarda información.
+    Nodo raíz (nodos inamovibles.):
+
+        -|- = Nodos raízm, inamovibles
+                            Estructura LDAP:
+                            ├── nodo 0  -|-
+                            ├── nodo 1  -|-
+                            ├── nodo 2  -|-
+                            ├── nodo 3
+                            │   ├── nodo 3.1
+                            │   ├── nodo 3.2
+                            │   └── nodo 3.3
+                            ├── nodo 4
+                            │   ├── nodo 4.1
+                            │   └── nodo 4.2
+                            └── nodo 5
+                                ├── nodo 5.1
+                                └── nodo 5.2
+
+tercer práctica segunda parte: instalación de jxplorer

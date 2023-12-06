@@ -1,0 +1,1 @@
+enlaces a permissions.md y theory.md
