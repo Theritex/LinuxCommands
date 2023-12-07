@@ -19,7 +19,7 @@ El 22/11/2023, se creó el primer directorio en un USB portatil con la funcional
 
 ## Infromación
 
-El contenido de Linux commands ha hecho que a partir de si mismo, puedan crearse nuevos repositorios, como bien son [TermuxCommands](https://github.com/Theritex/TermuxCommands) o [SwitchCommands](), estos, siendo una variante de LinuxCommands, cumplen con el mismo objetivo, proveer información y servir como hoja de apuntes completamente abierta.
+El contenido de Linux commands ha hecho que a partir de si mismo, puedan crearse nuevos repositorios, como bien son [TermuxCommands](https://github.com/Theritex/TermuxCommands) o [SwitchCommands](https://github.com/Theritex/SwitchCommands), estos, siendo una variante de LinuxCommands, cumplen con el mismo objetivo, proveer información y servir como hoja de apuntes completamente abierta.
 
 ## Contribución
 
