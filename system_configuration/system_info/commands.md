@@ -4,4 +4,6 @@
 #-----------------------#---------------------------------------------------------------------------------------------------#---------------------------------------------------------------#-----------------------------------------------------------#-------------------------------------------------------#
 ├── fsck                §; Realizar la comprobación y reparación de sistemas de archivos en sistemas basados en Unix/Linux  §; 
 ├── alias               §; Agregar alias a comando
+├── unalias             §; Eliminar alias a comando
+├── du                  §; 
 └── unalias             §; Elimianr alias de comando
