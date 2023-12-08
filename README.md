@@ -20,6 +20,7 @@ El 22/11/2023, se creó el primer directorio en un USB portatil con la funcional
 ## Infromación
 
 El contenido de Linux commands ha hecho que a partir de si mismo, puedan crearse nuevos repositorios, como bien son [TermuxCommands](https://github.com/Theritex/TermuxCommands) o [SwitchCommands](https://github.com/Theritex/SwitchCommands), estos, siendo una variante de LinuxCommands, cumplen con el mismo objetivo, proveer información y servir como hoja de apuntes completamente abierta.
+El lenguaje oficial de LinuxCommands es el Español, cualquier otro idioma que se muestre en el repositorio ha de ser tomado como una referencia o falta de traducción, es posible que a la larga puedan aparecer versiones específicas para ciertos idiomas, no obstante, el original es y siempreserá el Español.
 
 ## Contribución
 
@@ -33,9 +34,7 @@ Las personas que en los orígenes aportaron grandes cantidades de infromación a
 - Juan P. [Contribuidor en sección de servicios servidor]
 - Diego Gracía [Contribuidor en información del sistema]
 
-
 ## Licencia
 
 Licencia de uso [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es)
-
 
