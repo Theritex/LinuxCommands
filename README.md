@@ -20,7 +20,42 @@ El 22/11/2023, se creó el primer directorio en un USB portatil con la funcional
 ## Infromación
 
 El contenido de Linux commands ha hecho que a partir de si mismo, puedan crearse nuevos repositorios, como bien son [TermuxCommands](https://github.com/Theritex/TermuxCommands) o [SwitchCommands](https://github.com/Theritex/SwitchCommands), estos, siendo una variante de LinuxCommands, cumplen con el mismo objetivo, proveer información y servir como hoja de apuntes completamente abierta.
-El lenguaje oficial de LinuxCommands es el Español, cualquier otro idioma que se muestre en el repositorio ha de ser tomado como una referencia o falta de traducción, es posible que a la larga puedan aparecer versiones específicas para ciertos idiomas, no obstante, el original es y siempreserá el Español.
+El lenguaje oficial de LinuxCommands es el Español, cualquier otro idioma que se muestre en el repositorio ha de ser tomado como una referencia o falta de traducción, es posible que a la larga puedan aparecer versiones específicas para ciertos idiomas, no obstante, el original es y siempre será el Español.
+
+Las tildes son restringidas, permitendo la búsqueda exacta de los comandos mediante 'Control + H'.
+
+## Recomendación
+
+> Recomendación de uso:
+Se recomienda clonar el repositorio para un mayor manejo y libre uso (siguiendo siempre, las restricciones impuestas).
+
+### Clonar el repositorio: [Windows]
+
+Abrimos la terminal  y nos posicionamos en la ubicación donde queremos que se copie el repositorio:
+```
+Control + R
+cd /Desktop
+```
+Clonamos el repositorio:
+```
+git clone https://github.com/Theritex/LinuxCommands
+```
+
+### Clonar el repositorio: [Linux]
+
+Abrimos la terminal y nos posicionamos en la ubicación donde queremos que se copie el repositorio:
+```
+Control + T
+cd /home/user
+```
+Instalamos git
+```
+sudo apt install git
+```
+Clonamos el respotiorio:
+```
+git clone https://github.com/Theritex/LinuxCommands
+```
 
 ## Contribución
 
@@ -28,8 +63,8 @@ Durante la creación de LinuxCommands, varias personas aportaron infromación de
 
 Las personas que en los orígenes aportaron grandes cantidades de infromación al repositorio son:
 
-- Andrés Abadías [Creador del repositorio y dueño de LinuxCommands]
-- Unai U. [Contribuidor en sección de ciberseguridad]
+- Andrés Abadías [Creador del repositorio y dueño de LinuxCommands] [Contribuidor general]
+- Unai Urrestarazu [Contribuidor en sección de ciberseguridad]
 - Clara C. [Contribuidora en sección de gestión de ficheros y directorios]
 - Juan P. [Contribuidor en sección de servicios servidor]
 - Diego Gracía [Contribuidor en información del sistema]
