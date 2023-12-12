@@ -29,6 +29,17 @@ Las tildes son restringidas, permitendo la búsqueda exacta de los comandos medi
 > Recomendación de uso:
 Se recomienda clonar el repositorio para un mayor manejo y libre uso (siguiendo siempre, las restricciones impuestas).
 
+**Extensiones:**
+
+Cuando se use `Visual Studio Code`, se recomienda instalar las siguiente extensiones:
+```
+[Extensiones - Visual Studio Code]
+├── Open in New Window (Permite mostrar contendo en una nueva ventana)
+├── HTML Preview (Permite previsualizar documentos HTML)
+└── MDX Preview (Permite previsualizar documento MARKDOWN)
+```
+
+## Clonación de repositorio:
 ### Clonar el repositorio: [Windows]
 
 Abrimos la terminal  y nos posicionamos en la ubicación donde queremos que se copie el repositorio:
