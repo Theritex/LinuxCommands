@@ -1,0 +1,13 @@
+Informe:
+
+Fecha [XX/12/2023] :: XX.XX
+
+Release [document_gestion-release] :: salida coumento base - recopilación comandos de gestión de ficheros y directorios
+Contenido publicado:
+
+/document_gestion
+    ├── commands.md
+    ├── main.md
+    └── theory.md
+
+La versión publicada, puede ser actualizada posteriormente con fines de resstructuración o mejora.
