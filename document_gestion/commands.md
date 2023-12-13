@@ -80,39 +80,43 @@
 ├── tail                    §; Mostrar las ultimas 10 lineas del documento                                                      §; tail <fichero>                                               §; tail fich.txt                                            §; Muestra las 10 ultimas lienas del fichero `fich.txt`                                                                                             §; `[ - ]`
 │   ├── -f                  §; Ajustar contenido a medida que crece                                                             §; tail -f <fichero>                                            §; tail -f fich.txt                                         §; Va ajustando la pantalla a medida que se muestra mas contenido al documento                                                                      §; `[ - ]`
 │   └── -n                  §; Muestra las ultimas lienas indicadas comenzando desde abajo del fichero                          §; tail -n <numero> <fichero>                                   §; tail -n 30 fich.txt                                      §; Muestra las 30 ultimas lineas del fichero `fich.txt`                                                                                             §; `[ - ]`
-├── ln                      §; Creacion de un enlace duro                                                                       §; ls <fichero> <enlace>                                        §; ln fich.txt fich-nex.txt                                 §; Crea un enlace duro al fichero 'fich.txt' con enlace 'fich-nex.txt'                                                                              §; `[ - ]`
-│   ├── -s                  §; Creacion de un enlace simbolico                                                                  §; ls -s <fichero> <enlace>                                     §; ln -s fich.txt fich-sl.txt                               §; Crea un enlace simbolico del fichero `fich.txt` con enlace `fich-sl.txt`                                                                         §; `[ - ]`
-│   ├── -f                  §; Eliminacion de los ficheros ya creados en la ruta de destino                                     §; 
-│   ├── -t                  §; Espicificacion de la ruta de destino de la creacion de enlaces                                   §; 
-│   └── -r                  §; Creacion simbolica relativa al destino                                                           §; 
-├── wc                      §; Contar palabras, lineas y caracteres en ficheros                                                 §; 
-│   ├── -l                  §; Mostrar numero de lineas                                                                         §; 
-│   ├── -w                  §; Mostrar numero de palabras                                                                       §; 
-│   ├── >                   §; Sobreescribir contenido de fichero indicado                                                      §; 
-│   └── >>                  §; Redireccion sin edicion agregando contenido al final                                             §; 
-├── tar                     §; Creacion de fichero comprimido                                                                   §; 
-│   ├── -cvf                §; Integracion completa dentro del fichero tar                                                      §; 
-│   ├── -tvf                §; Mostrar contenido comprimdo dentro de fichero tar                                                §; 
-│   └── -xvf                §; Extraccion de contenido comprimido de fichero tar                                                §; 
-├── swapon                  §; Activar paginacion para intercambio en el sistema                                                §; 
-│   ├── -a / --all          §; Activacion de zonas intercambio en /etc/fstab                                                    §; 
-│   ├── -d / --discard      §; Activacion de descartes de intercambio si son admitidos                                          §; 
-│   ├── -e / --ifexists     §; Omitir dispositivos no existentes sin aviso                                                      §; 
-│   ├── -f / --fixpgsz      §; Reiniciar espacio de intercambio                                                                 §; 
-│   ├── -o / --options      §; Listar opciones intercambio                                                                      §; 
-│   ├── -p / --priority     §; Especificar prioridad de dispositivo                                                             §; 
-│   └── -s / --summary      §; Mostrar resumen de dispositivos de intercambio                                                   §; 
+├── ln                      §; Creacion de un enlace duro                                                                       §; ln <fichero> <enlace>                                        §; ln fich.txt fich-nex.txt                                 §; Crea un enlace duro al fichero 'fich.txt' con enlace 'fich-nex.txt'                                                                              §; `[ - ]`
+│   ├── -s                  §; Creacion de un enlace simbolico                                                                  §; ln -s <fichero> <enlace>                                     §; ln -s fich.txt fich-sl.txt                               §; Crea un enlace simbolico del fichero `fich.txt` con enlace `fich-sl.txt`                                                                         §; `[ - ]`
+│   ├── -f / --force        §; Eliminacion forzada de los ficheros ya creados en la ruta de destino                             §; ln -f <fichero> <enlace>                                     §; ln -f fich.txt fich-fl.txt                               §; Crea un enlace forzoso del fichero `fich.txt` con enlace `fich-fl.txt`, evitando que puedan haber perdidas                                       §; `[ - ]`
+│   ├── -s / --symbolic     §; Creación de enlace simbólico en lugar de enlace duro                                             §; ln -s <fichero> <enlace>                                     §; ln -s fich.txt fich-sl.txt                               §; Crea un enlace simbolico, actuando como puntero directo del fichero `fich.txt` con enlace `fich-sl.txt`                                          §; 
+│   ├── -d / --directory    §; Creación de enlaces duros a directorios                                                          §; 
+│   ├── -i / --interactive  §; Verificacion de eliminacion de destinos                                                          §; 
+│   └── -r / --relative     §; Creacion simbolica relativa al destino                                                           §; ln -f
+├── wc                      §; Contar palabras, lineas y caracteres en ficheros                                                 §; wc
+│   ├── -l                  §; Mostrar numero de lineas                                                                         §; wc -l
+│   ├── -w                  §; Mostrar numero de palabras                                                                       §; wc -w
+│   ├── >                   §; Sobreescribir contenido de fichero indicado                                                      §; wc >
+│   └── >>                  §; Redireccion sin edicion agregando contenido al final                                             §; wc >>
+├── tar                     §; Creacion de fichero comprimido                                                                   §; tar
+│   ├── -cvf                §; Integracion completa dentro del fichero tar                                                      §; tar -cvf
+│   ├── -tvf                §; Mostrar contenido comprimdo dentro de fichero tar                                                §; tar -twf
+│   └── -xvf                §; Extraccion de contenido comprimido de fichero tar                                                §; tar -xvf
+├── swapon                  §; Activar paginacion para intercambio en el sistema                                                §; swapon
+│   ├── -a / --all          §; Activacion de zonas intercambio en /etc/fstab                                                    §; swapon -a
+│   ├── -d / --discard      §; Activacion de descartes de intercambio si son admitidos                                          §; swapon -d
+│   ├── -e / --ifexists     §; Omitir dispositivos no existentes sin aviso                                                      §; swapon -c
+│   ├── -f / --fixpgsz      §; Reiniciar espacio de intercambio                                                                 §; swapon -f
+│   ├── -o / --options      §; Listar opciones intercambio                                                                      §; swapon -o
+│   ├── -p / --priority     §; Especificar prioridad de dispositivo                                                             §; swapon -p
+│   └── -s / --summary      §; Mostrar resumen de dispositivos de intercambio                                                   §; swapon -s
+├── swapoff                 §; Desactivar paginacion de intercambio                                                             §; swapoff
+│   ├── -a / --all          §; Desactivacion completa areas de intercambio especificadas en /etc/fstab                          §; swapoff -a
+│   ├── -v / --verbose      §; Activar modo detallado para imprimir mensajes informativos durante la operación                  §; swapoff -v
+│   ├── -V / --version      §; Activar modo detallado al desactivar el intercambio, mostrando mensajes en la salida estándar    §; swapoff .V
+│   └── -h / --help         §; Mostrar resumen de opciones disponibles y sintaxis del comando swapoff                           §; swapoff -h
+├── mkswap                  §; Configurar un area como espacio de intercambio                                                   §;
 ├── diff                    §; Comparar contenido entre dos ficheros                                                            §; diff <fichero1> <fichero2>                                   §; diff fich1.txt fich2.txt                                 §; Compara entre fich1.txt y fich2.txt                                                                                                                  §; `[ - ]`
 │   ├── -u / --unified      §; Mostrar diferencias en un formato unificado facilitando la lectura                               §; diff -u <fichero1> <fichero2>                                §; diff -u fich1-txt fich2.txt                              §; Compara entre fich1.txt y fich2.txt con un output sencillo                                                                                           §; `[ - ]`
 │   ├── -c / --context      §; Moestrar contexto adicional alrededor de las diferencias                                         §; diff -c <fichero1> <fichero22>                               §; diff -c fich1.txt fich2.txt                              §; Compara entre fich1.txt y fich2.txt mostrando en la salida más contenido en las diferencias                                                          §; `[ - ]`
 │   ├── -r / --recursive    §; Comparar directorios de forma recursiva                                                          §; diff -r <directorio1> <directorio2>                          §; diff -r Documentos Docs                                  §; Compara entre Documentos y Docs                                                                                                                      §; `[ - ]`
 │   └── -i / --ignore-case  §; Comparar entre ficheros sin tener en cuenta mayusculas o minusculas                              §; diff -i <fichero1> <fichero2>                                §; diff -i fich1 fich2                                      §; Compara el contneido ignorando las mayusculas y minusculas                                                                                           §; `[ - ]`
-├── swapoff                 §; Desactivar paginacion de intercambio                                                             §; 
-│   ├── -a / --all          §; Desactivacion completa areas de intercambio especificadas en /etc/fstab                          §; 
-│   ├── -v / --verbose      §; Activar modo detallado para imprimir mensajes informativos durante la operación                  §; 
-│   ├── -V / --version      §; Activar modo detallado al desactivar el intercambio, mostrando mensajes en la salida estándar    §; 
-│   └── -h / --help         §; Mostrar resumen de opciones disponibles y sintaxis del comando swapoff                           §; 
-└── mkswap                  §; Configurar un area como espacio de intercambio                                                   §; 
+
+ 
 
 ```
 
