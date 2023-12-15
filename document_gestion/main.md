@@ -7,7 +7,9 @@
 [Author]: $Andrés $Abadías || [Pseudonymous]: $Nisamov-->
 
 
-
+Estructura de busqueda de comando en la teoria:
+com=comando
+li=linea
 
 
 
