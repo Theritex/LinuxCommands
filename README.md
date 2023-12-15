@@ -83,6 +83,7 @@ Las personas que en los orígenes aportaron grandes cantidades de infromación a
 ## Apoyo
 
 Si te ha servidor nuestro contenido, considera apoyarnos a través de [buymeacoffee](https://www.buymeacoffee.com/theritex).
+
 Gracias por contar con nosotros y nuestro contenido, si deseas ponerte en contacto con nosotros, envíanos un mensaje a <theritex.contact@gmail.com>
 
 ## Licencia
