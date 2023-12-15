@@ -1,5 +1,6 @@
 # Teoría Gestion de Ficheros y Directorios:
 
+## Linea 7 | touch
 [com1,li7] - `touch`
 
 El comando touch permite al usuario crear un fichero, si no se especifica la extension, se genera de forma automatica, un fichero de texto `.txt`.
@@ -32,6 +33,7 @@ touch .hidden
 
 Esto permite que durante la busqueda de ficheros, este aparezca oculto y solo pueda ser visto mediante una opcion de busqueda
 
+## Linea 8 | ls
 [com1,li8] - `ls`
 
 El comando ls permite listar el contenido de la actual ubicacion, mostrando todosu contenido.

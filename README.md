@@ -80,6 +80,10 @@ Las personas que en los orígenes aportaron grandes cantidades de infromación a
 - Juan P. [Contribuidor en sección de servicios servidor]
 - Diego Gracía [Contribuidor en información del sistema]
 
+## Apoyo
+
+Si te ha servidor nuestro contenido, considera apoyarnos a través de [buymeacoffee](https://www.buymeacoffee.com/theritex).
+
 ## Licencia
 
 Licencia de uso [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es)
