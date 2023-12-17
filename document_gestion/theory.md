@@ -64,6 +64,26 @@ ls -al
 ```
 Esta orden nos permite listar de foma detallada mostrando todo el contenido incluyendo ficheros ocultos.
 
+## Linea 14 | tree
+[com1,li14] - `tree`
+
+Tree es un comando que requiere ser instalado, para ello, se utiliza el comando `sudo apt install tree`.
+Este comando lista el contenido de la ruta en modo raíz, pemritiendo ver como es la estructura completa de la dirección.
+
+Este comando es similar a `ls` con la diferencia de la forma en la que muestran el contenido en el output.
+
+Este comando cuenta con varias opciones para mostrar únicamente lo que se desea:
+
+```
+-d -
+-f -
+-a -
+-u -
+-g -
+-h -
+```
+
+
 <!--## En espera
 
 tar

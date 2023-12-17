@@ -36,7 +36,7 @@ Cuando se use `Visual Studio Code`, se recomienda instalar las siguiente extensi
 [Extensiones - Visual Studio Code]
 ├── Open in New Window (Permite mostrar contendo en una nueva ventana)
 ├── HTML Preview (Permite previsualizar documentos HTML)
-└── MDX Preview (Permite previsualizar documento MARKDOWN)
+└── MDX Preview (Permite previsualizar documentos MARKDOWN)
 ```
 
 ## Clonación de repositorio:
