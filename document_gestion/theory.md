@@ -3,7 +3,6 @@
 La siguiente ifnromacion esta vinculada al documento practico de la gestion de documentos y directorios, [ver el documento](/document_gestion/commands.md).
 
 ## Linea 7 | touch
-[com1,li7] - `touch`
 
 El comando touch permite al usuario crear un fichero, si no se especifica la extension, se genera de forma automatica, un fichero de texto `.txt`.
 La extension de un fichero, no condiciona su funcion, en todos los ficheros es posible ingresar contenido, debido a que el sistema operativo Linux, divide todo su contenido en dos categorias: ficheros y directorios.
@@ -36,7 +35,6 @@ touch .hidden
 Esto permite que durante la busqueda de ficheros, este aparezca oculto y solo pueda ser visto mediante una opcion de busqueda.
 
 ## Linea 8 | ls
-[com1,li8] - `ls`
 
 El comando ls permite listar el contenido de la actual ubicacion, mostrando todosu contenido.
 Este comando cuenta con varios opciones para hacer mas compacta o abierta el listado, las opciones registradas son:
@@ -65,7 +63,6 @@ ls -al
 Esta orden nos permite listar de foma detallada mostrando todo el contenido incluyendo ficheros ocultos.
 
 ## Linea 14 | tree
-[com1,li14] - `tree`
 
 Tree es un comando que requiere ser instalado, para ello, se utiliza el comando `sudo apt install tree`.
 Este comando lista el contenido de la ruta en modo raíz, pemritiendo ver como es la estructura completa de la dirección.
