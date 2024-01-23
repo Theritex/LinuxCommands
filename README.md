@@ -1,10 +1,10 @@
 # Linux Commands
 
-Linux Commands es un repositorio creado por [Nisamov](https://github.com/Nisamov) con el objetivo de proveer infromación de una forma completa y sencilla.
+Linux Commands es un repositorio creado por [Nisamov](https://github.com/Nisamov) con el objetivo de proveer información de una forma completa y sencilla.
 
 ## Origen
 
-El origen del proyecto está reistrado sobre la fecha 01/03/2023, sin embargo, el origen oficial del documento, se sitúa sobre mediados de verano del año 2022, mientras Nisamov estaba comenzando a descubir el mundo de Linux y las posibilidades que traía consigo.
+El origen del proyecto está reistrado sobre la fecha 01/03/2023, sin embargo, el origen oficial del documento, se sitúa a mediados del verano del año 2022, mientras Nisamov estaba comenzando a descubir el mundo de Linux y las posibilidades que traía consigo.
 
 ## Historia
 
@@ -34,9 +34,9 @@ Se recomienda clonar el repositorio para un mayor manejo y libre uso (siguiendo 
 Cuando se use `Visual Studio Code`, se recomienda instalar las siguiente extensiones:
 ```
 [Extensiones - Visual Studio Code]
-├── Open in New Window (Permite mostrar contendo en una nueva ventana)
-├── HTML Preview (Permite previsualizar documentos HTML)
-└── MDX Preview (Permite previsualizar documentos MARKDOWN)
+    ├── Open in New Window (Permite mostrar contendo en una nueva ventana)
+    ├── HTML Preview (Permite previsualizar documentos HTML)
+    └── MDX Preview (Permite previsualizar documentos MARKDOWN)
 ```
 
 ## Clonación de repositorio:
@@ -51,6 +51,8 @@ Clonamos el repositorio:
 ```
 git clone https://github.com/Theritex/LinuxCommands
 ```
+Este comando clonará el respositorio dentro de la localiación de escritorio, en caso de quererla en otra ubicación, ten en cuenta el idioma de tu sistema operativo y ambia los valores según tus preferencias:
+`/Desktop` = `/Escritoriop`
 
 ### Clonar el repositorio: [Linux]
 
@@ -65,8 +67,9 @@ sudo apt install git
 ```
 Clonamos el respotiorio:
 ```
-git clone https://github.com/Theritex/LinuxCommands
+git clone https://github.com/Theritex/LinuxCommands /home/user/Documents
 ```
+Este comando clona el repositorio en la ruta indicada al final, si se elimina dicha ruta, el repositorio se clonará en la ruta donde se encuentre con la consola.
 
 ## Contribución
 
