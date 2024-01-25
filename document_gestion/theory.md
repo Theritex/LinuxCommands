@@ -62,6 +62,21 @@ ls -al
 ```
 Esta orden nos permite listar de foma detallada mostrando todo el contenido incluyendo ficheros ocultos.
 
+### Output | ls
+
+La salida del comando ls está compuesta por una serie de carácteres con la siguiente estructura:
+
+Ejemplo:
+```
+-rwxr--r-- 1 root root 56 Jan 24 20:51 bucle.sh
+```
+
+Estructura de salida:
+```
+[permisos] [número de enlaces] [propietario] [grupo] [tamaño] [fecha y hora de modificación] [nombre del archivo o directorio]
+```
+Este método está creado con el obejtivo de ser sencillo y rápido de entender
+
 ## Linea 14 | tree
 
 Tree es un comando que requiere ser instalado, para ello, se utiliza el comando `sudo apt install tree`.
