@@ -1,3 +1,8 @@
+## [0.00] - //-//-2022
+### Creacion de documento
+Todo el contanido anteiromente no registrado ha sido creado en un docuemnto separado donde se alamcena todo el contenido pasado a este repositorio.
+Cone l tiempo se iran implementando secciones y modificandolas agregando mas contenido de forma ordenada.
+
 ## [1.25] - 16-12-2023
 
 ### Nuevo contenido
@@ -13,7 +18,7 @@
 - Corrección de gramática en el fcihero `README.md`
 - Amplación de comandos en `/permission_gestion/permissions.md`
 
-## [1.30] - 26-01-2024
+## [1.30] - 26-01-2024 #00
 - Nuevos directorios desorganizados (por reorganizar)
 - Ampliación y corrección de contenido general
 - Contenido agregado, directorios con contenido:
@@ -21,3 +26,12 @@
 -   /secure_channel/ftp (main.md, theory.md & commands.md)
 -   /secure_channel/ssh (main.md, theory.md & commands.md)
 -   /backup_rsync (main.md, theory.md & commands.md)
+
+## [1.31] - 26-01-2024 #01
+
+- Nuevos directorios desorganizados (por reorganizar)
+- Contenido agregado, directorios con contenido:
+-   /firewall_ufw
+-   KEYPASS.md
+-   /virtual_private_network_openvpn
+-   /disk_format_dd
