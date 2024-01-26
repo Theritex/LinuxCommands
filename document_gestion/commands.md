@@ -105,5 +105,3 @@
     └── -i / --ignore-case  §; Comparar entre ficheros sin tener en cuenta mayusculas o minusculas                              §; diff -i <fichero1> <fichero2>                                §; diff -i fich1 fich2                                      §; Compara el contneido ignorando las mayusculas y minusculas                                                                                       §; `[ - ]`
 
  ```
-
-> [ ! ] Repositorio creado por [Nisamov](https://github.com/Nisamov).
