@@ -1,16 +1,11 @@
 ## [0.00] - //-//-2022
-### Creacion de documento
 Todo el contanido anteiromente no registrado ha sido creado en un docuemnto separado donde se alamcena todo el contenido pasado a este repositorio.
-Cone l tiempo se iran implementando secciones y modificandolas agregando mas contenido de forma ordenada.
+Con el tiempo se iran implementando secciones y modificandolas agregando mas contenido de forma ordenada.
 
 ## [1.25] - 16-12-2023
-
-### Nuevo contenido
-- Teoría en el módilo `gestión de documentos` ampliada
+- Teoría en el módulo `gestión de documentos` ampliada
 
 ## [1.27] - 16-12-2023
-
-### Nuevo contenido
 - Teoría en el módilo `gestión de documentos` ampliada
 - Arreglo en puntuaciones y correción de palabras
 
@@ -28,7 +23,6 @@ Cone l tiempo se iran implementando secciones y modificandolas agregando mas con
 -   /backup_rsync (main.md, theory.md & commands.md)
 
 ## [1.31] - 26-01-2024 #01
-
 - Nuevos directorios desorganizados (por reorganizar)
 - Contenido agregado, directorios con contenido:
 -   /firewall_ufw
