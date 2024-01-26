@@ -32,6 +32,6 @@ Cone l tiempo se iran implementando secciones y modificandolas agregando mas con
 - Nuevos directorios desorganizados (por reorganizar)
 - Contenido agregado, directorios con contenido:
 -   /firewall_ufw
--   KEYPASS.md
+-   KEYWORD.md
 -   /virtual_private_network_openvpn
 -   /disk_format_dd
