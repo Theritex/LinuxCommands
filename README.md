@@ -52,7 +52,7 @@ Clonamos el repositorio:
 git clone https://github.com/Theritex/LinuxCommands
 ```
 Este comando clonará el respositorio dentro de la localiación de escritorio, en caso de quererla en otra ubicación, ten en cuenta el idioma de tu sistema operativo y ambia los valores según tus preferencias:
-`/Desktop` = `/Escritoriop`
+`/Desktop` = `/Escritorio`
 
 ### Clonar el repositorio: [Linux]
 
