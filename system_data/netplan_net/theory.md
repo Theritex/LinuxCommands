@@ -1,6 +1,6 @@
 Netplan es un programa que permite al usuario gestionar la red estableciendola en interna, externa y modificando sus propiedades, cambiando asi la configuracion de red del equipo, bien sea cliente o servidor.
 
-netplan esta disponible para versiones Ubuntu 18 y posteriores,  para versiones anteriores esta el fchero `etc/network/interfaces`
+Netplan esta disponible para versiones Ubuntu 18 y posteriores,  para versiones anteriores esta el fchero `etc/network/interfaces`
 
 La direccion de netplan y su fichero de configuracion es `/etc/netplan/01-network-manager-all.yml`
 Es necesario acceder como superusuario (sudo) para poder editarlo con los permisos (si esto no es llevado a cabo correctamente, al tratar de guardar la configuracion esta no dejara guardar la misma, debido a la falta de permisos).
