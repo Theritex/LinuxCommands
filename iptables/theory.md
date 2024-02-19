@@ -1,25 +1,23 @@
-Las iptables sirven para filtrar y para las red snat
-
-Los routers se divines en Tablas/Cadenas
-
-Las tablas pueden ser:
-- Input (Filtro: Indica si pasa o no pasa la informacion ya enrutada)
-- Output (Filtro: Indica si sale o no sale la informacion ya enrutada)
-- Prerouting (Modificacion de destino antes de ser enrutado)
-- Postronting (Modificacion de destino despues de ser enrutado)
-- Forward (Redireccion: Redirige la informacion a otro router)ç
-Las cadenas pueden ser:
-- Filter (Indica si la infromación pasa o no pasa)
-- NAT
-    - NAT PAT 
-    - GCNAT (Nat en raíz [Una nat dentro de otra y así sucesivamente])
-    - MANGLE (Cambia las cabeceras de las direcciones)
-    - RAW (NAT + MANGLE > Le cambia la cabecera sin darle una NAT)
-Dentro de los firltros hay dos opciones (accept, drop o eject).
-Dentro de las NAT están las instrucciones:
-- DNAT (Modifica la direccion de destino)
-- Redirect (Oculta la IP cambiándola por dentro)
-- Masquerade (NAT Dinamica)
-- SNAT (NAT Estatica)
-
-Para su uso se recomienda usar sudo
+Las IPTables consisten en un filtro de paquetes en red automático, funcionando como un cortafuegos.
+Actualmente hay miles de servidores y servicios en linea que utilizan este método para mantener un funcionamiento seguro.
+Dentro de la categoría de las IPTables existen diferentes categorías que nos permiten establecer diferentes funcionalidades, estas son:
+Tablas:
+    • Input (Filtro): Indica si pasa o no pasa la información ya enrutada
+    • Output (Filtro): indica si sale o no sale la información ya enrutada.
+    • Prerouting (Modificación de destino antes de ser enrutado).
+    • Postrouting (Modificación de destino después de ser enrutado).
+    • Forward (Redirección: Redirige la información a otro router).
+Cadenas:
+    • Filter: Controla si los paquetes deben ser permitidos o bloqueados.
+    • NAT (Network Address Translation - Traducción de Direcciones de Red).
+    • NAT PAT (Port Address Translation - Traducción de Direcciones de Puerto).
+    • GCNAT (NAT en cascada): Aplica NAT de manera recursiva, permitiendo NAT dentro de NAT.
+Opciones dentro de los filtros:
+    • Accept: Acepta el tráfico.
+    • Drop: Descartar el tráfico silenciosamente.
+    • Reject: Rechaza el tráfico enviando una notificacion al remitente.
+Instrucciones dentro de las NAT:
+    • DNAT (Destination NAT - Traducción de Dirección de Destino): Modifica la dirección de destino de los paquetes.
+    • Redirect (Redirección): Oculta la IP cambiándola internamente.
+    • Masquerade (NAT Dinámica): Aplica NAT dinámica para ocultar las direcciones internas.
+    • SNAT (Source NAT - Traducción de Dirección de Origen): Modifica la dirección de origen de los paquetes salientes.
