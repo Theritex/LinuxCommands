@@ -1,3 +1,4 @@
+```
 Las IPTables consisten en un filtro de paquetes en red automático, funcionando como un cortafuegos.
 Actualmente hay miles de servidores y servicios en linea que utilizan este método para mantener un funcionamiento seguro.
 Dentro de la categoría de las IPTables existen diferentes categorías que nos permiten establecer diferentes funcionalidades, estas son:
@@ -21,3 +22,4 @@ Instrucciones dentro de las NAT:
     • Redirect (Redirección): Oculta la IP cambiándola internamente.
     • Masquerade (NAT Dinámica): Aplica NAT dinámica para ocultar las direcciones internas.
     • SNAT (Source NAT - Traducción de Dirección de Origen): Modifica la dirección de origen de los paquetes salientes.
+```
