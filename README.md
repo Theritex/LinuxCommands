@@ -77,7 +77,7 @@ Durante la creación de LinuxCommands, varias personas aportaron infromación de
 
 Las personas que en los orígenes aportaron grandes cantidades de infromación al repositorio son:
 
-- ⥏﹅⥑ Andrés Abadías [Creador del repositorio y dueño de LinuxCommands]
+- ⥏﹅⥑ [Andrés Abadías](https://github.com/Nisamov) [Creador del repositorio y dueño de LinuxCommands]
 - ⥏﹆⥑ Unai Urrestarazu [Contribuidor en sección de ciberseguridad]
 - ⥏﹆⥑ Clara C. [Contribuidora en sección de gestión de ficheros y directorios]
 - ⥏﹆⥑ Juan P. [Contribuidor en sección de servicios servidor]
