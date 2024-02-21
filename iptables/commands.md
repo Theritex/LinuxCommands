@@ -1,3 +1,4 @@
+```
 iptables -V                                                     #Version de IPTables
 iptables -F                                                     #Borrar todas las IPTables, NAT, Cadenas... (todo)
 iptables -t nat -F                                              #Borrar solo tablas NAT
@@ -12,3 +13,4 @@ iptables --help                                                 #Mostrar ayuda i
 iptables -L -vn --line-numbers                                  #Mostrar IPTables con mas contenido listado numerado (L=List v=verbose n=numerar los puertos)
 iptables -A INPUT -s 10.0.0.5/8 -j ACCEPT                       #Permitir INPUT de la red 10.0.0.5
 iptables -A INPUT -S 10.0.0.200 -p tcp --deport 20 -j ACCEPT    #Por el puerto 20 denegar el protocolo tcp
+```
