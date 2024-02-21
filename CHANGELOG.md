@@ -29,3 +29,8 @@ Con el tiempo se iran implementando secciones y modificandolas agregando mas con
 -   KEYWORD.md
 -   /virtual_private_network_openvpn
 -   /disk_format_dd
+
+## [1.32] - 21-02-2024 #01
+- Actualización de KEYWORD.md
+-   Se ha descomentado claves y modificado separadores
+- Corrección de formato en virtual_private_network_openvpn/commands.md

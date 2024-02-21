@@ -14,17 +14,18 @@ cp easy-rsa-old
 
 Red Estática:
 nano /etc/netplan/00-network-manager-all.yml	(Los espacios son de 2uds)
-├────network:
+```
+└────network:
 	├──────version: 2
 	├──────renderer: networkd (por defecto está NetworkManager)
 	├──────ethernets:
 	├────────enp0s3:
-├──────────dhcp4: no
+	├──────────dhcp4: no
 	├──────────addresses: [192.168.10.10/24]
 	├──────────gateway4: 192.168.10.1
 	├──────────nameservers:
 	└────────────addresses: [8.8.8.8]
-
+```
 
 netplan apply
 
@@ -32,14 +33,14 @@ Copia:
 
 
 cp -r ./easy-rsa-old/easy-rsa/2.0/ easy-rsa
-
+```
 Información:
-build-ca		>>Crear certificado autorizado
-build-dh	>>Diff hellman (encripta todo el trayecto de comunicación)
+build-ca			>>Crear certificado autorizado
+build-dh			>>Diff hellman (encripta todo el trayecto de comunicación)
 build-key-server	>>Crea llaves de certificados de servidor
-build-key	>>Crea llaves de certificado de cliente
-vars		>>Archivo donde se indica ubicación, cliente (por defecto Estados Unidos - San Francisco)
-
+build-key			>>Crea llaves de certificado de cliente
+vars				>>Archivo donde se indica ubicación, cliente (por defecto Estados Unidos - San Francisco)
+```
 
 Archivo vars:
 nano  vars
@@ -57,13 +58,14 @@ export PKCS11_PIN=1234
 
 
 Crear VPN:
+```
 mv openssl.1.0.0.cnf openssl.cnf
-. ./vars				>>Propiedades de certificado
-./clean-all			>>Borrar certificados creados
-./build-ca			>>Crear certificado “ca.crt” dentro de /keys
+. ./vars					>>Propiedades de certificado
+./clean-all					>>Borrar certificados creados
+./build-ca					>>Crear certificado “ca.crt” dentro de /keys
 ./build-key-server servidor	>>
-./build-dh			>>Crear el dh dentro de /keys
-
+./build-dh					>>Crear el dh dentro de /keys
+```
 
 Archivo Configuración VPN:
 
@@ -86,26 +88,26 @@ put cliente.key
 put cliente.crt
 put cliente.csr
 
-
+```
 Información server.conf (servidor) - nano /home/user/easy-rsa/keys/server.conf
-ca /home/user/easy-rsa/keys/ca.crt		>>Establecer dirección de los archivos en máquina servidor
-cert /home/user/easy-rsa/keys/servidor.crt	>>Establecer dirección de los archivos en máquina servidor
-key /home/user/easy-rsa/keys/servidor.key	>>Establecer dirección de los archivos en máquina servidor
+ca /home/user/easy-rsa/keys/ca.crt					>>Establecer dirección de los archivos en máquina servidor
+cert /home/user/easy-rsa/keys/servidor.crt			>>Establecer dirección de los archivos en máquina servidor
+key /home/user/easy-rsa/keys/servidor.key			>>Establecer dirección de los archivos en máquina servidor
 
 ifconfig-pool-persist /home/user/easy-rsa/keys/ipp.txt
-archivo ipp.txt						>>Archivo donde se almacenan las IPs que se le dan a los clientes
+archivo ipp.txt										>>Archivo donde se almacenan las IPs que se le dan a los clientes
 
-tls-auth ta.key 0						>>Comentar esta linea
+tls-auth ta.key 0									>>Comentar esta linea
 status /home/user/easy-rsa/keys/openvpn-status.log	>>Registro de personas que se loguean
 
-openvpn server.conf						>>Iniciar VPN en el servidor
+openvpn server.conf									>>Iniciar VPN en el servidor
 
 
 Información client.conf (cliente)
-ca /home/user/ca.crt				>>Establecer dirección de los archivos en máquina cliente
-cert /home/user/cliente.crt			>>Establecer dirección de los archivos en máquina cliente
-key /home/user/cliente.key				>>Establecer dirección de los archivos en máquina cliente
+ca /home/user/ca.crt								>>Establecer dirección de los archivos en máquina cliente
+cert /home/user/cliente.crt							>>Establecer dirección de los archivos en máquina cliente
+key /home/user/cliente.key							>>Establecer dirección de los archivos en máquina cliente
 
-tls-auth ta.key 0						>>Comentar esta linea
-openvpn user.conf						>>Iniciar VPN en el cliente
-
+tls-auth ta.key 0									>>Comentar esta linea
+openvpn user.conf									>>Iniciar VPN en el cliente
+```
