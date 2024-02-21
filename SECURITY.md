@@ -4,7 +4,7 @@ Si se descubre alguna vulnerabilidad en el contenido del repositorio "LinuxComma
 Procedimiento de Reporte:
 Para reportar cualquier vulnerabilidad o preocupación de seguridad, siga estos pasos:
 
-Envíe un correo electrónico detallado a la dirección de contacto del equipo de seguridad: contact.theritex@gmail.com.
+Envíe un correo electrónico detallado a la dirección de contacto del equipo de seguridad: theritex.contact@gmail.com.
 En el correo electrónico, proporcione información completa sobre la vulnerabilidad o preocupación, incluyendo detalles sobre cómo se descubrió y cualquier contexto relevante.
 Si es posible, incluya pasos para reproducir la vulnerabilidad o evidencia adicional que pueda ayudar al equipo de seguridad a comprender y abordar el problema.
 Proporcione su información de contacto para que el equipo de seguridad pueda comunicarse con usted para obtener más detalles o informar sobre el progreso del problema.
