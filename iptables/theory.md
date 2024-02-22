@@ -1,7 +1,6 @@
 ```
 Las IPTables consisten en un filtro de paquetes en red automático, funcionando como un cortafuegos.
-Actualmente hay miles de servidores y servicios en linea que utilizan este método para mantener un funcionamiento seguro.
-Dentro de la categoría de las IPTables existen diferentes categorías que nos permiten establecer diferentes funcionalidades, estas son:
+Dentro de la categoría de las IPTables existen diferentes categorías que permiten establecer diferentes funcionalidades, estas son:
 Tablas:
     • Input (Filtro): Indica si pasa o no pasa la información ya enrutada
     • Output (Filtro): indica si sale o no sale la información ya enrutada.
