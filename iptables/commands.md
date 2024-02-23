@@ -17,22 +17,3 @@ iptables -L -vn --line-numbers                                  §; Mostrar IPTa
 iptables -A INPUT -s 10.0.0.5/8 -j ACCEPT                       §; Permitir INPUT de la red 10.0.0.5
 iptables -A INPUT -S 10.0.0.200 -p tcp --deport 20 -j ACCEPT    §; Por el puerto 20 denegar el protocolo tcp
 ```
-
-<!--
-iptables
-    ├── -V
-    ├── -F
-    ├── -X
-    ├── -Z
-    ├── -L
-    │   ├── -vn
-    │   └── --line-numbers
-    ├── -S
-    ├── -P
-    ├── -A
-    │   ├── INPUT
-    │   │   └── -s
-    │   └── OUTPUT
-    │       └── -s
-    └── -t
--->
