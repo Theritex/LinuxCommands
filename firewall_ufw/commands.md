@@ -1,3 +1,5 @@
+<!--En espera de edicion-->
+```
 Instalación: sudo apt install ufw
 Estado: ufw status
 Lista de normas: ufw status numbered
@@ -30,4 +32,4 @@ ufw allow from 10.0.0.30 to any port 22
 Permite las conexiones entrantes al puerto 22 a la IP 10.0.0.30.
 ufw allow from 10.0.0.30 to any port 22 proto tcp
 Permite las conexiones entrantes al puerto 22, con protocolo TCP a la IP 10.0.0.30.
-
+```
