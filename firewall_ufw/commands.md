@@ -1,13 +1,21 @@
-<!--En espera de edicion-->
-```
-Instalación: sudo apt install ufw
-Estado: ufw status
-Lista de normas: ufw status numbered
-Eliminar una regla: ufw delete <número>
-Habilitar UFW: ufw enable
-Deshabilitar UFW: ufw disable
-Formatear UFW: ufw reset
+# Firewall UFW
 
+```bash
+# Instalacion
+sudo apt install ufw
+# Ver estado programa
+ufw status
+# Listar normas de programa de forma numerada
+ufw status numbered
+# Eliminar una regla del programa
+ufw delete <numero>
+# Habilitar programa
+ufw enable
+# Dehabilitar programa
+ufw disable
+# Reestablecer programa
+ufw reset
+```
 ufw default deny incoming
 Deniega conexiones entrantes que no coincidan con ninguna regla.
 ufw default allow incoming
