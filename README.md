@@ -10,7 +10,7 @@ Este directorio será remodelado una vez se consiga informacion suficiente para 
 - [Teoría | Theory.md](/backup_rsync/theory.md)
 ### Combinacion de Teclas
 - [Combinaciones | Combination.md](/combination_keys/combination.md)
-### Destructor de Discord
+### Destructor de Discos
 - [Comandos | Commands.md](/disk_format_dd/commands.md)
 - [Teoría | Theory.md](/disk_format_dd/theory.md)
 ### Gestion de Documentos
