@@ -9,26 +9,26 @@
 │   ├── -l                  §; Lista detallada                                                                                  §; ls -l                                                        §; ls -l                                                    §; Lista de forma detallada ficheros y repositorios                                                                                                 §; `[ - ]`
 │   ├── -a                  §; Mostrar ficheros ocultos                                                                         §; ls -a                                                        §; ls -a                                                    §; Lista mostrando ficheros ocultos                                                                                                                 §; `[ - ]`
 │   ├── -h                  §; Lectura para humanos                                                                             §; ls -h                                                        §; ls -h                                                    §; Lista mostrando una vista comoda para humanos                                                                                                    §; `[ - ]`
-│   ├── -t                  §; Ordena los ficheros por fecha de modificacion
-│   ├── -S                  §; Ordena los ficheros por tamaño, de mayor a menor
+│   ├── -t                  §; Ordena los ficheros por fecha de modificacion                                                    §; ls -t                                                        §; ls -t                                                    §; Lista los archivos de modificacion mas reciente a ultima modificacion realizada                                                                  §; `[ - ]`
+│   ├── -S                  §; Ordena los ficheros por tamaño, de mayor a menor                                                 §; ls -S                                                        §; ls -S                                                    §; Lista los archivos por tamaño de mayor a menor tamaño                                                                                            §; `[ - ]`
 │   ├── -r                  §; Mostrar ficheros de los subdirectorios                                                           §; ls -r <directorio>                                           §; ls -r /home/user/documents                               §; Lista de forma recursiva, incluyendo subdirectorios                                                                                              §; `[ - ]`
-│   ├── -d                  §; Mostrar solo directorios
-│   ├── -i                  §; Mostrar numero de inodo de cada fichero
-│   ├── -R                  §; Mostrar de forma recursiva el contenido de los directorios
-│   ├── -F                  §; Añadir un caracter identificativo al final de cada fichero
-│   ├── -1                  §; Mostrar un fichero por linea
-│   ├── -Q                  §; Mostrar los nombres de ficheros entre comillas
-│   ├── -v                  §; Ordenar naturalmente los ficheros con numeros por valor
-│   ├── -X                  §; Ordenar ficheros por extension
-│   ├── --color             §; Cpñprear los diferentes tipos de ficheros 
-│   ├── --block-size        §; Mostrar ficheros ordenados por 
+│   ├── -d                  §; Mostrar solo directorios                                                                         §; 
+│   ├── -i                  §; Mostrar numero de inodo de cada fichero                                                          §; 
+│   ├── -R                  §; Mostrar de forma recursiva el contenido de los directorios                                       §; 
+│   ├── -F                  §; Añadir un caracter identificativo al final de cada fichero                                       §; 
+│   ├── -1                  §; Mostrar un fichero por linea                                                                     §; 
+│   ├── -Q                  §; Mostrar los nombres de ficheros entre comillas                                                   §; 
+│   ├── -v                  §; Ordenar naturalmente los ficheros con numeros por valor                                          §; 
+│   ├── -X                  §; Ordenar ficheros por extension                                                                   §; 
+│   ├── --color             §; Cpñprear los diferentes tipos de ficheros                                                        §; 
+│   ├── --block-size        §; Mostrar ficheros ordenados por                                                                   §; 
 │   │    ├── b              §; bytes                                                                                            §; ls --block-size="<tamaño>"                                   §; ls --block-size=b
 │   │    ├── k              §; kilobytes                                                                                        §; ls --block-size="<tamaño>"                                   §; ls --block-size=k
 │   │    ├── M              §; Megabyte                                                                                         §; ls --block-size="<tamaño>"                                   §; ls --block-size=M
 │   │    ├── G              §; Gigabyte                                                                                         §; ls --block-size="<tamaño>"                                   §; ls --block-size=G
 │   │    ├── T              §; Terabytes                                                                                        §; ls --block-size="<tamaño>"                                   §; ls --block-size=T
 │   │    └── P              §; Petabytes                                                                                        §; ls --block-size="<tamaño>"                                   §; ls --block-size=P
-│   ├── --time=atime
+│   ├── --time=atime        §;
 │   ├── ?                   §; Mostrar contenido que contenga una serie de caracteres                                           §; ls <archivo>?                                                §; ls fich?                                                 §; Lista todo el contenido que contenga "fich"                                                                                                      §; `[ - ]`
 │   └── *                   §; Mostrar todo el contenido relacionado                                                            §; ls *                                                         §; ls fich*                                                 §; Lista todo el contenido que empiece por "fich"                                                                                                   §; `[ - ]`
 ├── tree                    §; Lista los directorios / ficheros en modo arbol                                                   §; tree                                                         §; tree                                                     §; Lsita con estructura arbol el contenido                                                                                                          §; Instalar paquete `sudo apt install tree`
@@ -123,5 +123,4 @@
     ├── -c / --context      §; Mostrar contexto adicional alrededor de las diferencias                                          §; diff -c <fichero1> <fichero22>                               §; diff -c fich1.txt fich2.txt                              §; Compara entre fich1.txt y fich2.txt mostrando en la salida mas contenido en las diferencias                                                      §; `[ - ]`
     ├── -r / --recursive    §; Comparar directorios de forma recursiva                                                          §; diff -r <directorio1> <directorio2>                          §; diff -r Documentos Docs                                  §; Compara entre Documentos y Docs                                                                                                                  §; `[ - ]`
     └── -i / --ignore-case  §; Comparar entre ficheros sin tener en cuenta mayusculas o minusculas                              §; diff -i <fichero1> <fichero2>                                §; diff -i fich1 fich2                                      §; Compara el contneido ignorando las mayusculas y minusculas                                                                                       §; `[ - ]`
-
  ```
