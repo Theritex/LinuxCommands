@@ -1,0 +1,1 @@
+Fichero donde observar el UID(User ID) o GID(Group ID): `etc/login.deffs`

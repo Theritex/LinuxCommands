@@ -94,3 +94,4 @@ Gracias por contar con nosotros y nuestro contenido, si deseas ponerte en contac
 Licencia de uso [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es)
 
 > [ ! ] Repositorio creado por [Andrés Abadías](https://github.com/Nisamov).
+<!-- por y para -->
