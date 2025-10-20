@@ -4,9 +4,8 @@
 #---------------------------#---------------------------------------------------------------------------------------------------#---------------------------------------------------------------#
 useradd                     §; Crea un usuario basandose en una configuracion establecida en /etc/login.defs
 adduser                     §; Crea un usuario basandose en /etc/adduser.conf
+su                          §; Verificar que un usuario existe (su <usuario>)
 ```
-
-
 
 Los usuarios tras ser creados, pertenecen a un grupo primario, siendo este, su propio grupo, el resto de grupos que se le agreagarán, serán grupos secundarios.
 Los usuarios dados de alta en el sistema, son alojados en el ficheros: `/etc/passwd`

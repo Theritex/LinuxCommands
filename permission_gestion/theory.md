@@ -2,6 +2,17 @@
 
 Los permisos de Linux, permiten los usuarios acceder y efectuar diferentes acciones en los archivos.
 
+### Permisos en ficheros
+| u (users) | g(groups) | o(others) | 
+|----------|----------|----------|
+| RW- (Read, Write, Nothing) | R-S (Read, Nothing, SGID no activado) | R-T(Read, Nothing, Sticky Bit no activado) |
+
+Ejemplo cambio de permisos usando la información de la tabla anterior:
+- `chmod u+s /fichero` Otorga permisos de SGID al usuario en el fichero
+- `chmod o+x /fichero` Otorga permisos de ejecución a otros en el fichero (Sticky Bit)
+
+--- 
+
 ```
 UID (User ID)                   §; Identificador de usuario, número designado a un único usuarios del sistema informático o red, permite gestoinar permisos y recursos dentro del sistema.
     │                           §; UID 0 está reservado únicamente al usuario root, cuenta con privilegios elevados y acceso a todos los recursos del sistema.
@@ -17,6 +28,8 @@ Formato UID:
 ```
 
 ### Permisos especiales
+Fichero donde modificar los parámetros de UID(User ID) y GID(Group ID): `/etc/login.defs`
+
 Hay permisos espciales, siendo estos los siguentes:
 ```
 SUID (Set User ID)              §; Permite que los archvos que lo tienen activado, al ejecutarlo como un usuario diferente, la ejecución se realiza con los permisos que tiene el propietario (aunque en usuario que lo ha ejecutado no cuente con esos permisos).
