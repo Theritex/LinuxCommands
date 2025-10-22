@@ -64,7 +64,7 @@
 /etc/network: Configuraciones de red.
 /etc/apache: Configuraciones del servidor web Apache.
 /etc/nginx: Configuraciones del servidor web Nginx.
-/etc/skel: Plantilla predeterminada para los nuevos usuarios.
+/etc/skel: Plantilla predeterminada para los nuevos usuarios, crea el /home de los usuarios.
 /etc/ssh: Configuraciones del protocolo SSH.
 /home: Es el directorio base para los directorios personales de los usuarios.
 
@@ -116,3 +116,6 @@
 
 /media/cdrom: Punto de montaje para unidades de CD/DVD.
 /media/usb: Punto de montaje para dispositivos USB.
+
+. : Es una entrada especial integrada que apunta al propio directorio donde nos encontramos.
+.. : Es una entrada especial integrada que apunta al directorio previo (en la jerarquía de rutas) de donde nos encontramos.

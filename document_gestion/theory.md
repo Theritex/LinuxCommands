@@ -95,6 +95,24 @@ Este comando cuenta con varias opciones para mostrar únicamente lo que se desea
 -h -
 ```
 
+## ln
+`ln` permite crear un enlace (tanto duro, como simbólico) en el sistema:
+Un enlace duro es un archivo que apunta al mismo contenido almacenado en disco que el archivo original, así como es una copia exacta del fichero original.
+- Los archivos originales y los enlaces duros dispondrán del mismo inodo y estarán apuntando al mismo contenido almacenado en disco.
+- Cualquier cambio al archivo original afecta a los dos, pues apuntan a la misma dirección de memoria.
+- No se pueden crear enlaces duros de directorios, unicamente de archivos.
+- Cambiar la ubicación del archivo original no rompe el enlace duro (pues sigue apuntando a la misma direccion de memoria).
+- Los metadatos de los dos son los mismos.
+- El contenido del disco no se borrará hasta que ambos sean eliminados.
+
+Un enlace simbólico (o blando) tiene más similitud con los accesos directos en windows.
+- Los enlaces simbólicos apuntan al nombre del archivo, el cual apunta al contenido almacenado en nuestro disco duro.
+- Cada enlace blando tiene su propio inodo y es diferente al del archivo original.
+- Podemos crear archivos blandos de archivos o carpetas aunque estén en discos duros o particiones diferentes.
+> Para eliminar un enlace simbólico, usamos el comando `unlink <Enlace Simbólico>` (Los enlaces duros se eliminan como ficheros normales).
+
+
+Para ver más información del comando, ejecute `man ln`
 
 <!--## En espera
 

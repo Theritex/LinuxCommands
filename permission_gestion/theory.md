@@ -2,6 +2,15 @@
 
 Los permisos de Linux, permiten los usuarios acceder y efectuar diferentes acciones en los archivos.
 
+El sistema numérico de permisos es el siguiente
+
+| Permisos Base | Permisos en Numérico | Significado | 
+| rwxrwxrwx | 777 | Lectura, Escritura y Ejecución para el usuario propietario, el grupo principal del usuario propietario y el resto
+
+> 7 es la suma de: rwx (r=4, w=2, x=1 [4+2+1=7]), se tiene en cuenta que esto se realiza por el usuario propietario, el grupo principal del usuario propietario y el resto.
+
+En cuanto a la modificación de permisos con `chmod`, pueden modificarse los permisos, tanto en numérico como en letras.
+
 ### Permisos en ficheros
 | u (users) | g(groups) | o(others) | 
 |----------|----------|----------|
@@ -10,7 +19,9 @@ Los permisos de Linux, permiten los usuarios acceder y efectuar diferentes accio
 Ejemplo cambio de permisos usando la información de la tabla anterior:
 - `chmod u+s /fichero` Otorga permisos de SGID al usuario en el fichero
 - `chmod o+x /fichero` Otorga permisos de ejecución a otros en el fichero (Sticky Bit)
-
+Es posible aplicar permisos de diferentes formas:
+- `chmod ugo+x /fichero` Otorga permisos de ejecución para usuarios, grupo principal y otros.
+- `chmod u+x,g+x,o+x /fichero` Otorga permisos de ejecución para usuarios, grupo principal y otros.
 --- 
 
 ```
@@ -37,6 +48,7 @@ SUID (Set User ID)              §; Permite que los archvos que lo tienen activa
     └── S                       §; Si el permiso de ejecución del propietario no está activado (-rwSr-xr-x).
 Representación octal: 4000
 Representa un riesgo elevado, pues permiten la escalada de privilegios (recomendable, no activar el SUID en un archivo de shell).
+Si el bit SUID y los permisos de ejecución están activados, ejecutará el fichero con los permisos del propietario del archivo.
 ```
 
 ```
@@ -46,12 +58,14 @@ SGID (Set Group ID)             §; EL proceso que se lanza al ejecutar el archi
 
 Representación octal: 2000
 Representa un riesgo moderado, pues permite escalada lateral a usuarios del mismo perfil y riesgo de confidencialidad.
+Permite a los usuarios leer pero no modificar ni eliminar nada de su contenido.
 ```
 
 ```
 Sticky Bit                      §; Solo se aplica a directorios | Cuando el Sticky Bit está activado en un directorio, los archivos que están dentro de el, solo pueden ser eliminados o renombrados por el propietario del directorio (generalmente root), incluso si otros usuarios tienen permisos de escritura en ese directorio.
     ├── t                       §; En el permiso de ejecución de otros.
     └── T                       §; Si el permiso de ejecución de otros no está activado.
+Representación octal: 1000
 Suele aplicarse en ficheros temporales (/tmp).
 ```
 
