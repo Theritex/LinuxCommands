@@ -1,5 +1,10 @@
 # Teoría Gestion de Ficheros y Directorios:
 
+Los comandos cuentan con una sintaxis, siendoe sta la siguiente:
+- `comando <parametros> <argmentos>`
+No todos los comandos tienen que tener parámetros, ni todos los comandos han de tener argumentos.
+- Comando sin parámetros ni argumentos: `w`, `ll`
+
 La siguiente ifnromacion esta vinculada al documento practico de la gestion de documentos y directorios, [ver el documento](/document_gestion/commands.md).
 
 ## Linea 7 | touch

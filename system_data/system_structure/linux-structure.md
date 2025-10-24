@@ -49,8 +49,6 @@
         ├── /cdrom
         └── /usb
 
-```
-
 / (Raíz): Es el directorio raíz del sistema de archivos. Todos los demás directorios y archivos se encuentran bajo este.
 
 /bin: Contiene programas ejecutables (binarios) que son esenciales para el funcionamiento del sistema, y que son necesarios en el modo de usuario.
@@ -58,9 +56,12 @@
 /boot: Almacena archivos relacionados con el proceso de arranque del sistema, como el núcleo del sistema operativo y los archivos de configuración del gestor de arranque.
 
 /dev: Contiene archivos especiales que representan dispositivos, como discos duros, impresoras, etc.
+/dev/zero: Directorio especial del sistema, de tipo carácter
+/dev/null: Directorio especial del sistema, de tipo carácter
 
 /etc: Guarda archivos de configuración del sistema y de las aplicaciones.
 
+/etc/apt/sources.list.d/ubuntu.sources: Fichero con direcciones de repositorios de los servidores, desde donde descargar el software en el equipo (ubuntu).
 /etc/network: Configuraciones de red.
 /etc/apache: Configuraciones del servidor web Apache.
 /etc/nginx: Configuraciones del servidor web Nginx.
@@ -119,3 +120,4 @@
 
 . : Es una entrada especial integrada que apunta al propio directorio donde nos encontramos.
 .. : Es una entrada especial integrada que apunta al directorio previo (en la jerarquía de rutas) de donde nos encontramos.
+```
