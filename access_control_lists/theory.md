@@ -8,9 +8,9 @@ En RHEL 9, las ACLs se implementan en sistemas de archivos como ext4 y XFS. Para
 
 | Tipo de entrada | Etiqueta de permisos | Forma en texto |
 |----------|----------|----------|
-| Owner (dueño) | ACL_USER_OBJ | `user::rwx`ó `u::rwx` |
-| Named user (usuario nombrado) | ACL_USER | `user::name:rwx`ó `u:name:rwx` |
-| Owning group (grupo dueño) * | ACL_GROUP-OBJ | `group::rwx`ó `g:rwx` |
+| Owner (dueño) | ACL_USER_OBJ | `user::rwx` ó `u::rwx` |
+| Named user (usuario nombrado) | ACL_USER | `user::name:rwx` ó `u:name:rwx` |
+| Owning group (grupo dueño) * | ACL_GROUP-OBJ | `group::rwx` ó `g:rwx` |
 |Named group (grupo nombrado) | ACL_GROUP | `group:name:rwx` ó `g:name:rwx` |
 | Mask (máscara) | ACL_MASK | `mask::rwx` ó `m::rwx` |
 | Others (otros)* | ACL_OTHER | `other::rwx` ó `o::rwx` |

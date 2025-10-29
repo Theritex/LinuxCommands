@@ -1,4 +1,11 @@
 <!--
+  _      _                     _____                                          _     
+ | |    (_)                   / ____|                                        | |    
+ | |     _ _ __  _   ___  __ | |     ___  _ __ ___  _ __ ___   __ _ _ __   __| |___ 
+ | |    | | '_ \| | | \ \/ / | |    / _ \| '_ ` _ \| '_ ` _ \ / _` | '_ \ / _` / __|
+ | |____| | | | | |_| |>  <  | |___| (_) | | | | | | | | | | | (_| | | | | (_| \__ \
+ |______|_|_| |_|\__,_/_/\_\  \_____\___/|_| |_| |_|_| |_| |_|\__,_|_| |_|\__,_|___/
+                                                                                    
 Todos los derechos pertenecientes a Andrés Ruslan Abadías Otal | Nisamov: github.com/Nisamov
 
 Este fichero se ha montado con el objetivo de poder mirarlo comodamente desde el navegador, no obstante, tambien se puede ver de forma local una vez descargado
