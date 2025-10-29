@@ -1,3 +1,7 @@
+# Administración de Servicios y Procesos en Linux
+
+Los procesos son instancias individuales de un programa que se ejecutan en el sistema, mientras que los servicios son procesos en segundo plano que proporcionan diversas funciones al sistema.
+
 Un proceso es una instancia de un programa en ejecución.
 - Un programa es un concepto diferente de un proceso
 - Un programa en ejecución puede generar uno o mas procesos
@@ -57,3 +61,15 @@ Para traer un proceso a primer plano de una lista, se ejecuta `fg %X`con el nume
 Para pasar un proceso de primer a segundo plano, se ejecuta el comando (ej: `sleep 57`), para ejecutar (CONTROL Z), que sirve para permitir el uso de la terminal.
 Para finalmente pasarlo, se ejecuta `bf %X`, al igual que el comando para pasarlo a primer plano.
 El comando `bg`, hace referencia a **Background**, lo que significa, Plano Secundario.
+
+## Sistemas de inicialización y gestión de servicios
+
+| Sistema de inicialización | Comando principal | Sistemas operativos / versiones comunes | Descripción clave |
+|-----------------------------|------------------|-----------------------------------------|-------------------|
+| **systemd** | `systemctl` | Distribuciones modernas de Linux (Ubuntu ≥15.04, Fedora, Arch, Debian ≥8, etc.) | Sistema de inicio paralelo basado en unidades; gestiona servicios, sockets y dependencias. |
+| **SysVinit** | `service` | Distribuciones Linux clásicas (Debian ≤7, CentOS 6, etc.) | Sistema tradicional con scripts en `/etc/init.d/`; secuencial y simple. |
+| **Upstart** | `initctl` | Ubuntu 9.10–14.10, RHEL 6 | Sistema de eventos que reemplazó temporalmente a SysVinit; basado en trabajos (“jobs”). |
+| **BSD init** | `rc.d` (scripts) | FreeBSD, OpenBSD, NetBSD | Sistema simple basado en scripts de inicio en `/etc/rc.d/`. |
+| **OpenRC** | `rc-service` | Gentoo, Alpine Linux, Artix Linux | Sistema alternativo ligero y rápido, compatible con scripts de SysVinit. |
+
+Listar servicios en el sistema con systemctl: `systemctl list-units --type service`

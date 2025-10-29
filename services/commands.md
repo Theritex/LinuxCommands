@@ -21,3 +21,6 @@
 │   ├── -9                  §; Mata el proceso **forzosamente** (SIGKILL)
 │   ├── -15                 §; Señal por defecto (SIGTERM) para terminar el proceso de forma segura
 │   └── killall <nombre>    §; Mata todos los procesos con el mismo nombre
+├── systemctl
+│   ├── list-units
+│   ├── status
