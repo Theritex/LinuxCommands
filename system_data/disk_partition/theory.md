@@ -47,3 +47,53 @@ Los dispositivos NVMe (Non Volatil Memory Express), tienen una convención de no
 | nN |Espacio de Nombres (Namespace) | n1 |
 | pZ | Partición | p1, p2 |
 | Completo | Disco NVMe | nvme0n1p1 |
+
+### Gestion de Volúmenes Lógicos
+- LVM Logical Volume Manager: Es una capa de abstracción entre dispositivos de almacenmiento y un sistema de archivos.
+
+Su vetaja principal es la flexibilidad que ofrece respecto al metodo de partición tradicional
+
+- Physical Volume (PV) - Volumen físico:
+Dispositivo de almacenamiento real (como un disco duro, partición o dispositivo RAID) que se usa como base para la gestión de volúmenes lógicos.
+
+- Volume Group (VG) - Grupo de volúmenes:
+Una agrupación de uno o más Physical Volumes que forma un espacio de almacenamiento común desde el cual se pueden crear volúmenes lógicos.
+
+- Logical Volume (LV) - Volumen lógico:
+Una porción del Volume Group que se comporta como una partición tradicional. Los sistemas de archivos se crean y montan sobre los volúmenes lógicos, ofreciendo flexibilidad para redimensionar o mover datos sin afectar el hardware físico subyacente.
+
+Pasos LVM:
+> Crear volumenes fisicos (PV) -> Crear grupos de volumen (VG) -> Crear volmenes logicos (LV) dentro del grupo de volumenes -> Asignar fs a cada volumen logico (LV) -> Montar el volumen logico (LV) en una ruta del sistema de ficheros [Si queremos que sea persistente, se agrega en el fichero `/etc/fstab`].
+>
+> Diso-s/Partición-es: ```--pvcreate-->PVs--vgcreate--VG--lvcreate-->LV--mkfs-->Sistema de Archivos```
+
+Los VGs agrupan uno o mas PVs, crando un pool de almacenamiento.
+
+
+### Volúmenes Físicos (PV)
+| Comando     | Función                             | Descripción                                                                 |
+|--------------|-------------------------------------|------------------------------------------------------------------------------|
+| `pvcreate`   | Crear un volumen físico             | Inicializa un disco o partición para usarlo con LVM, convirtiéndolo en un PV. |
+| `pvdisplay`  | Mostrar información detallada       | Muestra información detallada sobre los volúmenes físicos disponibles.       |
+| `pvs`        | Resumen de volúmenes físicos        | Muestra un resumen en formato de tabla de todos los PV existentes.           |
+| `pvremove`   | Eliminar un volumen físico          | Elimina la etiqueta LVM de un dispositivo, devolviéndolo a su estado normal. |
+
+## Grupos de Volúmenes (VG)
+| Comando     | Función                             | Descripción                                                                 |
+|--------------|-------------------------------------|------------------------------------------------------------------------------|
+| `vgcreate`   | Crear un grupo de volúmenes         | Crea un grupo de volúmenes a partir de uno o más volúmenes físicos.         |
+| `vgdisplay`  | Mostrar información detallada       | Muestra información detallada sobre los grupos de volúmenes existentes.     |
+| `vgs`        | Resumen de grupos de volúmenes      | Muestra un resumen en formato de tabla de todos los VG existentes.          |
+| `vgextend`   | Ampliar un grupo de volúmenes       | Agrega uno o más volúmenes físicos a un grupo de volúmenes existente.        |
+| `vgreduce`   | Reducir un grupo de volúmenes       | Elimina uno o más volúmenes físicos de un grupo de volúmenes.                |
+| `vgremove`   | Eliminar un grupo de volúmenes      | Borra un grupo de volúmenes y libera los PV asociados.                      |
+
+### Volúmenes Lógicos (LV)
+| Comando     | Función                             | Descripción                                                                 |
+|--------------|-------------------------------------|------------------------------------------------------------------------------|
+| `lvcreate`   | Crear un volumen lógico             | Crea un nuevo volumen lógico dentro de un grupo de volúmenes.               |
+| `lvdisplay`  | Mostrar información detallada       | Muestra información detallada sobre los volúmenes lógicos disponibles.      |
+| `lvs`        | Resumen de volúmenes lógicos        | Muestra un resumen en formato de tabla de todos los LV existentes.          |
+| `lvextend`   | Ampliar un volumen lógico           | Incrementa el tamaño de un volumen lógico existente.                        |
+| `lvreduce`   | Reducir un volumen lógico           | Disminuye el tamaño de un volumen lógico (requiere precaución).             |
+| `lvremove`   | Eliminar un volumen lógico          | Borra un volumen lógico del grupo de volúmenes.                             |

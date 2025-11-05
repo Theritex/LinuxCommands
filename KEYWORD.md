@@ -2,10 +2,10 @@
 # Teclado especial en Sistemas GNU/Linux
 
 ## Linux Virtual Box
-CTRL_DERECHO + F    §; Pantalla COmpleta (Guest Additions)
+CTRL_DERECHO + F    §; Pantalla Completa (Guest Additions)
 ALT_IZQUIERDO + →   §; Nueva terminal de linux server
 ALT + TAB           §; Movernos entre aplicaciones (interfaz)
-CTRL + ALT + TAB    §; Movernos etre ventanas en barra de tareas
+CTRL + ALT + TAB    §; Movernos entre ventanas en barra de tareas
 ## Linux Generico
 CTRL+ALT + L        §; Bloquear la sesion activa
 CTRL+ALT + T        §; Crear y abrir nueva terminal
@@ -38,8 +38,8 @@ CTRL + V            §; hace que el próximo carácter escrito se tome literalme
 CTRL + W            §; elimina la palabra detrás del cursor
 CTRL + X            §; lista las posibles completaciones de nombres de archivo de la palabra actual
 CTRL + Y            §; recupera (pega) el último ítem eliminado
-CTRL + Z            §; detiene el comando actual, reanuda con fg en primer plano o bg en segundo plano
-ALT + B             ; retrocede una palabra
+CTRL + Z            §; suspende el comando actual, reanuda con fg en primer plano o bg en segundo plano
+ALT + B             §; retrocede una palabra
 ALT + D             §; elimina la próxima palabra
 ALT + F             §; avanza una palabra
 ALT + H             §; borra un carácter hacia atrás
