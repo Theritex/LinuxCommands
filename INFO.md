@@ -8,14 +8,16 @@ El origen del proyecto está reistrado sobre la fecha 01/03/2023, sin embargo, e
 
 ## Historia
 
-LinuxCommands nació en el verano del año 2022 cuando Nisamov estaba comenzando en el mundo de la ciberseguridad, probando y apuntando todos los comandos que iba aprendiendo, nombrando al documento "Documento Origen", el cual contaba con apenas 15 comandos que le permitían moverse entre directorios, crear ficheros y clonar repositorios de GitHub.
+LinuxCommands nació en el verano del año 2022 cuando Nisamov estaba comenzando en el mundo de la informática, probando y apuntando todos los comandos que iba aprendiendo, nombrando al documento "Documento Origen", el cual contaba con apenas 15 comandos que le permitían moverse entre directorios, crear ficheros y clonar repositorios de GitHub.
 
 Tras acceder al curso de grado medio de Sistemas Microinformáticos y Redes, descubrió nuevos comandos, apuntando desde el primer día en el que comenzaron las clases.
 Al tener demasiados apuntes, tuvo que pasar todos los nuevos apuntes a un fichero en Drive dejando el documento origen con los comandos básicos, dando así lugar a la segunda generación de la lista de comandos, esta la nombró "Linux Commands [V.T]" (Testing Version).
 
 Trás el paso del tiempo, el documento fué ampliándose hasta tal punto que se tuvo que modfiicarel tamaño y fuente de la letra para que pudiera caber el comando, la descripción y un ejemplo, siendo la fuente de texto "Consolas" y con el tamaño de caracter "9".
 
-El 22/11/2023, se creó el primer directorio en un USB portatil con la funcionalidad de repositorio, creando así el primer repositorio local de LinuxCommands, con el tiempo, de ese repositorio no publicado, fueron apareciendo nuevos repositorios como TermuxCommands o SwitchCommands.
+En 22/11/2023, se creó el primer directorio en un USB portatil con la funcionalidad de repositorio, creando así el primer repositorio local de LinuxCommands, con el tiempo, de ese repositorio no publicado, fueron apareciendo nuevos repositorios como TermuxCommands o SwitchCommands.
+
+Para  el 11/09/2025, ya había entrado en grado superior, aportando así tanto nuevo conocimiento, como actualizando el viejo contenido subido al repositorio.
 
 ## Infromación
 
