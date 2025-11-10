@@ -1,0 +1,73 @@
+# Política de Copias de Seguridad
+
+## Introducción
+Una copia de seguridad es un duplicado de los datos que puede almacenarse en el mismo dispositivo o en otro. La elección de la ubicación de la copia de seguridad es crítica:
+
+- **Copia local**: Almacenada en el mismo equipo. No protege contra fallos físicos o desastres que afecten al equipo.
+- **Copia remota (off-site)**: Almacenada en otro dispositivo o ubicación, mitigando riesgos de fallo físico o desastres.
+
+## Ubicación de las Copias de Respaldo
+Para garantizar la seguridad de la información, se deben considerar las siguientes prácticas:
+
+- Ubicar el equipamiento alternativo y las copias de respaldo en sitios distintos y a una distancia de seguridad adecuada.
+- Distribuir geográficamente las copias para minimizar riesgos de pérdida por desastres locales.
+
+## Política de Copias de Seguridad
+- Debe existir una política formal de copias de seguridad.
+- Uso de múltiples soportes de manera periódica.
+- Cumplimiento con la legislación y regulaciones locales aplicables.
+- Evaluar riesgos asociados a copias en la nube y aplicar medidas de seguridad adicionales.
+
+## Definiciones Clave
+- **RTO (Recovery Time Objective)**: Tiempo objetivo para recuperar el sistema.
+- **RPO (Recovery Point Objective)**: Punto objetivo de recuperación, indica hasta qué momento los datos pueden ser recuperados.
+
+## Tipos de Copias de Seguridad
+- **Completa (Full):** Clonación total de toda la información.
+- **Incremental:** Copia únicamente la información nueva o modificada desde la última copia, ya sea completa o incremental. Es rápida y ocupa poco espacio, pero su restauración requiere todas las copias previas.
+- **Diferencial:** Copia únicamente la información nueva o modificada desde la última copia completa. Optimiza tiempo de almacenamiento y facilita restauración más rápida que la incremental.
+
+## Regla 3-2-1
+Para garantizar la redundancia y seguridad de los datos, se debe aplicar la regla 3-2-1:
+
+- **3 copias de los datos**: La original más dos copias adicionales.
+- **2 tipos de soportes diferentes**: Ej. disco duro local, nube, cintas.
+- **1 copia off-site**: Almacenada físicamente en otra ubicación o en un servicio en la nube distinto.
+
+## Seguridad de las Copias
+- **Cifrado**: Todas las copias deben cifrarse, especialmente aquellas que contienen información personal.
+- **Control de acceso**: Solo personal autorizado puede acceder a los soportes de copia.
+- **Inmutabilidad**: Las copias en la nube deben configurarse como inmutables para evitar modificaciones o borrados accidentales o maliciosos.
+
+## Verificación y Retención
+- **Verificación**: Realizar pruebas de restauración parciales mensualmente para asegurar la legibilidad y la correcta restauración de los datos.
+- **Retención (Modelo GFS - Grandfather-Father-Son)**:
+  - **Abuelo (Grandfather)**: Copia anual.
+  - **Padre (Father)**: Copia mensual.
+  - **Hijo (Son)**: Copia semanal o diaria.
+  - Este modelo asegura versiones históricas y facilita la recuperación ante distintos escenarios de pérdida de datos.
+
+## Documentación y Responsabilidades
+- Toda copia de seguridad debe registrarse con fecha, tipo, ubicación y responsable.
+- Se debe asignar un **responsable** encargado de la gestión, verificación y restauración de las copias.
+- La documentación debe incluir procedimientos, horarios de copia, protocolos de recuperación y contacto de responsables.
+
+# Copias de Seguridad con RSYNC
+
+## Características principales
+- **Copia incremental:** Solo transfiere los archivos que han cambiado desde la última copia, ahorrando tiempo y espacio.  
+- **Capacidad de sincronización remota:** Permite hacer copias entre diferentes máquinas a través de la red (usando SSH, por ejemplo).  
+- **Preservación de permisos:** Mantiene permisos, propietarios, grupos y fechas de modificación de los archivos.  
+- **Control de exclusión:** Posibilidad de excluir archivos o directorios específicos mediante patrones.  
+- **Compresión durante transferencia:** Reduce el tamaño de los datos enviados a través de la red usando la opción `-z`.  
+
+```bash
+#Estructura basica ejemplo
+rsync -avh /origen /destino
+# Estructura práctica ejemplo
+rsync -avhz --exclude='*.tmp' /origen usuario@servidor:/destino
+```
+
+---
+
+**Nota**: Es recomendable revisar periódicamente la política de copias de seguridad y actualizarla según cambios en infraestructura, legislación o necesidades del negocio.
