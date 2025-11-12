@@ -7,38 +7,100 @@
  |______|_|_| |_|\__,_/_/\_\  \_____\___/|_| |_| |_|_| |_| |_|\__,_|_| |_|\__,_|___/
                                                                                     
 Todos los derechos pertenecientes a Andrés Ruslan Abadías Otal | Nisamov: github.com/Nisamov
-
-Este fichero se ha montado con el objetivo de poder mirarlo comodamente desde el navegador, no obstante, tambien se puede ver de forma local una vez descargado
-Este directorio será remodelado una vez se consiga informacion suficiente para crear una pagina web con dicho contenido, hatsa entonces se agradece que se tome la molestia de usar este directorio.
 -->
 # LinuxCommands | Comandos y Servicios
-### Copias de seguridad Rsync
-- [Comandos | Commands.md](/backup_rsync/commands.md)
-- [Teoría | Theory.md](/backup_rsync/theory.md)
-### Combinacion de Teclas
-- [Combinaciones | Combination.md](/combination_keys/combination.md)
-### Destructor de Discos
-- [Comandos | Commands.md](/disk_format_dd/commands.md)
-- [Teoría | Theory.md](/disk_format_dd/theory.md)
-### Gestion de Documentos
-- [Comandos | Commands.md](/document_gestion/commands.md)
-- [Teoria | Theory](/document_gestion/theory.md)
-### Firewall
-- [Comandos | Commands](/firewall_ufw/commands.md)
-- [Teoria | Theroy](/firewall_ufw/theory.md)
-### IPTables
-- [Lista de Comandos | Command List](/iptables/command-list.md)
-- [Comandos | Commands.md](/iptables/commands.md)
-- [Teoria | Theory.md](/iptables/theory.md)
-### Gestion de Permisos
-- [Permisos | Permissions.md](/permission_gestion/permissions.md)
-- [Teoria | Theory.md](/permission_gestion/theory.md)
-### Canal Seguro
-- **Canal Seguro por FTP**
-  - [Comandos | Commands.md](/secure_channel/secure_channel_ftp/commands.md)
-  - [Teoria | Theory.md](/secure_channel/secure_channel_ftp/theory.md)
-- **Canal Seguro por SSH**
-  - [Comandos | Commands.md](/secure_channel/secure_channel_ssh/commands.md)
-  - [Teoria | Theory.md](/secure_channel/secure_channel_ssh/theory.md)
-### Gestion de Software
-- [Comandos | Commands.md](/software_gestion/commands.md)
+
+Este repositorio está basado en los apuntes personales del creador Andrés Ruslan Abadías Otal (15/07/2022).
+LinuxCommands es un repositorio público que sirve como apoyo a todos los adminsitradores de sistemas Junior y Senior que busquen repasar apuntes rápidos.
+
+El formato de comandos establecido en ficheros `commands.md`, está basado en el documento original `Documento de Origen.txt`.
+
+### Estructura Árbol del Repositorio:
+```sh
+LinuxCommands
+├── CONTRIBUTING.md
+├── INFO.md
+├── KEYWORD.md
+├── LICENSE
+├── README.md
+├── SECURITY.md
+├── access_control_lists
+│   ├── commands.md
+│   └── theory.md
+├── backup_rsync
+│   ├── commands.md
+│   └── theory.md
+├── combination_keys
+│   └── combination.md
+├── cron_tasks
+│   ├── commands.md
+│   └── theory.md
+├── data_dump
+│   ├── commands.md
+│   └── theory.md
+├── document_gestion
+│   ├── commands.md
+│   ├── compression.md
+│   ├── main.md
+│   └── theory.md
+├── firewall_ufw
+│   ├── commands.md
+│   └── theory.md
+├── iptables
+│   ├── command-list.md
+│   ├── commands.md
+│   └── theory.md
+├── permission_gestion
+│   ├── permissions.md
+│   └── theory.md
+├── secure_channel
+│   ├── secure_channel_ftp
+│   │   ├── commands.md
+│   │   └── theory.md
+│   └── secure_channel_ssh
+│       ├── commands.md
+│       └── theory.md
+├── security
+│   ├── audit.md
+│   ├── backup
+│   │   ├── commands.md
+│   │   └── theory.md
+│   ├── raid
+│   │   ├── mount.md
+│   │   └── test.sh
+│   └── theory.md
+├── services
+│   ├── commands.md
+│   └── theory.md
+├── software_gestion
+│   └── commands.md
+├── system_data
+│   ├── disk_partition
+│   │   ├── commands.md
+│   │   ├── theory.md
+│   │   └── virtualdisk.md
+│   ├── network_configuration
+│   │   ├── commands.md
+│   │   ├── dhcp_samba
+│   │   │   ├── smb.conf
+│   │   │   └── theroy.md
+│   │   ├── interfaces_net
+│   │   │   ├── dynamic-network.conf
+│   │   │   ├── static-network.conf
+│   │   │   └── theory.md
+│   │   ├── netplan_net
+│   │   │   ├── dynamic-network.conf
+│   │   │   ├── static-network.conf
+│   │   │   └── theory.md
+│   │   └── theory.md
+│   ├── system_data
+│   │   ├── packet_install_theory.md
+│   │   └── system_code.md
+│   └── system_structure
+│       └── linux-structure.md
+├── users_permissions
+│   ├── system_users.md
+│   └── user_gestion.md
+└── virtual_private_network_openvpn
+    └── commands.md
+  ```

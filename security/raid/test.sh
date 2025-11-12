@@ -7,6 +7,7 @@ losetup -f imagen1.img
 losetup -f imagen2.img
 apt update
 apt install -y mdadm
+# Revisamos el loop con lsblk
 mdadm --create --verbose /dev/md0 --level=1 --raid-devices=2 /dev/loop?? /dev/loop?? #Ver con lsblk | md0 es el nombre, podemos modificarlo por lo que queramos
 mdadm --detail /dev/md0
 mdadm -Es >> /etc/mdadm/mdadm.conf #Guardar la configuración actual en el fichero de configuración
