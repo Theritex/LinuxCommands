@@ -24,3 +24,6 @@ editar /etc/network/interfaces:
         - sudo ifdown enp0s3 + sudo ifup enp0s3 (para tirar y levantar una interfaz de red)
 
 comando dig (domain information groper) dig ejemplo.com
+
+El comando: `dhclient -d -nw enp0s3` para ver la información del servidor que otorga la dirección IP (en el cliente).
+El comando: `cat /var/lib/dhcp/dhcpd.leases` para ver la informacion de los clientes a los que se le otorga una IP (en el servidor).

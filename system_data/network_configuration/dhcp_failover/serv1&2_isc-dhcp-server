@@ -1,0 +1,4 @@
+# Mascara de red con la que se trabaja
+# Esta configuración se aplica a ambos servidores DHCP
+INTERFACESv4="enp0s3"
+INTERFACESv6=""
