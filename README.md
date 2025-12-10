@@ -7,8 +7,6 @@
  |______|_|_| |_|\__,_/_/\_\  \_____\___/|_| |_| |_|_| |_| |_|\__,_|_| |_|\__,_|___/
                                                                                     
 Todos los derechos pertenecientes a Andrés Ruslan Abadías Otal | Nisamov: github.com/Nisamov
--->
-
 <style>
   body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -66,15 +64,13 @@ Todos los derechos pertenecientes a Andrés Ruslan Abadías Otal | Nisamov: gith
 <body>
 
 <div class="doc-container">
-
-  <!-- Header -->
   <div class="doc-header">
     <div>Andrés Ruslan Abadías Otal</div>
     <div>Página web: <a href="https://github.com/Nisamov">Github</a></div>
     <div>Repositorio: <a href="https://github.com/Theritex/LinuxCommands">Repositorio Origen</a></div>
     <div class="separator"></div>
   </div>
-<!--Contenido de Documento-->
+-->
 
 # LinuxCommands | Comandos y Servicios
 
