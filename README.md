@@ -72,10 +72,13 @@ Todos los derechos pertenecientes a Andrés Ruslan Abadías Otal | Nisamov: gith
   </div>
 -->
 
+![Cartel Principal](.github/media/img.png)
+
 # LinuxCommands | Comandos y Servicios
 
-Este repositorio está basado en los apuntes personales del creador Andrés Ruslan Abadías Otal (15/07/2022).
-LinuxCommands es un repositorio público que sirve como apoyo a todos los adminsitradores de sistemas Junior y Senior que busquen repasar apuntes rápidos.
+Este repositorio está basado en los apuntes personales del creador [Andrés Ruslan Abadías Otal](https://github.com/Nisamov) (15/07/2022).
+
+> Linux Commands es un repositorio concebido para todas aquellas personas que desean aprender a realizar distintos servicios en sistemas Linux, así como para quienes buscan información detallada y específica sobre los contenidos disponibles en el propio repositorio.
 
 El formato de comandos establecido en ficheros `commands.md`, está basado en el documento original `Documento de Origen.txt`.
 
@@ -117,6 +120,12 @@ LinuxCommands
 ├── permission_gestion
 │   ├── permissions.md
 │   └── theory.md
+├── scripts
+│   └── bash
+│       ├── scripts_ejemplo
+│       │   ├── echo.sh
+│       │   └── for.sh
+│       └── theory.md
 ├── secure_channel
 │   ├── secure_channel_ftp
 │   │   ├── commands.md
@@ -145,6 +154,13 @@ LinuxCommands
 │   │   └── virtualdisk.md
 │   ├── network_configuration
 │   │   ├── commands.md
+│   │   ├── dhcp_failover
+│   │   │   ├── manual.md
+│   │   │   ├── serv1&2_isc-dhcp-server
+│   │   │   ├── serv1_01-network-manager-all.yaml
+│   │   │   ├── serv1_dhcpd.conf
+│   │   │   ├── serv2_01-network-manager-all.yaml
+│   │   │   └── serv2_dhcpd.conf
 │   │   ├── dhcp_samba
 │   │   │   ├── smb.conf
 │   │   │   └── theroy.md
@@ -167,5 +183,7 @@ LinuxCommands
 │   └── user_gestion.md
 └── virtual_private_network_openvpn
     └── commands.md
-  ```
+```
+<!--
 </div>
+-->
