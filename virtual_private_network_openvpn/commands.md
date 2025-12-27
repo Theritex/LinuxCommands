@@ -1,19 +1,16 @@
+<!-- Pendiente de corregir y establecer formato -->
 Una VPN es una conexión remota (crea una camino virtual a través de internet para conectarse sin una conexión).
-Requisitos:
-apt-get update
-apt install vsftpd
-apt install openssh-server
-apt install ftp
-apt install openssl
-apt install git
-apt install openvpn
 
-Clonamos Repositorios:
-git clone https://github.com/OpenVPN/easy-rsa-old
-cp easy-rsa-old 
+Instalación de requisitos:
+`sudo apt update && sudo apt install -y vsftpd openssh-server ftp openssl git openvpn`
 
-Red Estática:
-nano /etc/netplan/00-network-manager-all.yml	(Los espacios son de 2uds)
+Clonación de Repositorio:
+`git clone https://github.com/OpenVPN/easy-rsa-old`
+`cp easy-rsa-old`
+
+Establecimiento de Red Estática:
+[Revisar apuntes de redes estáticas.](/system_data/network_configuration/netplan_net/static-network.conf)
+`nano /etc/netplan/00-network-manager-all.yml`	(Los espacios son de 2uds)
 ```
 └────network:
 	├──────version: 2
@@ -26,13 +23,10 @@ nano /etc/netplan/00-network-manager-all.yml	(Los espacios son de 2uds)
 	├──────────nameservers:
 	└────────────addresses: [8.8.8.8]
 ```
+Aplicación de cambios en red: `netplan apply`
 
-netplan apply
-
-Copia:
-
-
-cp -r ./easy-rsa-old/easy-rsa/2.0/ easy-rsa
+Clonación de rsa:
+`cp -r ./easy-rsa-old/easy-rsa/2.0/ easy-rsa`
 ```
 Información:
 build-ca			>>Crear certificado autorizado
@@ -43,7 +37,8 @@ vars				>>Archivo donde se indica ubicación, cliente (por defecto Estados Unido
 ```
 
 Archivo vars:
-nano  vars
+`nano  vars`
+```
 export KEY_COUNTRY=”Country”
 export KEY_PROVINCE=”Province”
 export KEY_CITY=”City”
@@ -55,7 +50,7 @@ export KEY_NAME=key_name
 export KEY_OU=Key_Informativa
 export PKCS11_MODULE_PATH=DNI Electrónico
 export PKCS11_PIN=1234
-
+```
 
 Crear VPN:
 ```
@@ -68,8 +63,7 @@ mv openssl.1.0.0.cnf openssl.cnf
 ```
 
 Archivo Configuración VPN:
-
-
+```
 cd /usr/share/doc/openvpn/examples/sample-config-files
 cp server.conf.gz /home/user/easy–rsa/keys
 cd /home/user/easy-rsa/keys
@@ -77,9 +71,10 @@ gunzip  server.conf.gz	>>Comprimir y transformarlo en un archivo legible
 cp /usr/share/doc/openvpn/examples/sample-config-files/client.conf /home/user/easy-rsa/keys/
 nano /etc/vsftpd.conf >>Descomentar “write_enable=YES”
 service vsftpd restart
-
+```
 
 Conexión por FTP
+```
 ftp usuario@ip
 contraseña
 put ca.crt
@@ -87,9 +82,10 @@ put client.conf
 put cliente.key
 put cliente.crt
 put cliente.csr
-
 ```
-Información server.conf (servidor) - nano /home/user/easy-rsa/keys/server.conf
+
+Información server.conf (servidor) - `nano /home/user/easy-rsa/keys/server.conf`
+```
 ca /home/user/easy-rsa/keys/ca.crt					>>Establecer dirección de los archivos en máquina servidor
 cert /home/user/easy-rsa/keys/servidor.crt			>>Establecer dirección de los archivos en máquina servidor
 key /home/user/easy-rsa/keys/servidor.key			>>Establecer dirección de los archivos en máquina servidor

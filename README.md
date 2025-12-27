@@ -84,13 +84,10 @@ El formato de comandos establecido en ficheros `commands.md`, está basado en el
 
 ### Estructura Árbol del Repositorio:
 ```sh
-LinuxCommands
-├── CONTRIBUTING.md
-├── INFO.md
-├── KEYWORD.md
-├── LICENSE
-├── README.md
-├── SECURITY.md
+.
+├── .github
+│   └── media
+│       └── img.png
 ├── access_control_lists
 │   ├── commands.md
 │   └── theory.md
@@ -134,13 +131,13 @@ LinuxCommands
 │       ├── commands.md
 │       └── theory.md
 ├── security
-│   ├── audit.md
 │   ├── backup
 │   │   ├── commands.md
 │   │   └── theory.md
 │   ├── raid
 │   │   ├── mount.md
-│   │   └── test.sh
+│   │   └── process.sh
+│   ├── audit.md
 │   └── theory.md
 ├── services
 │   ├── commands.md
@@ -153,14 +150,13 @@ LinuxCommands
 │   │   ├── theory.md
 │   │   └── virtualdisk.md
 │   ├── network_configuration
-│   │   ├── commands.md
 │   │   ├── dhcp_failover
 │   │   │   ├── manual.md
-│   │   │   ├── serv1&2_isc-dhcp-server
 │   │   │   ├── serv1_01-network-manager-all.yaml
 │   │   │   ├── serv1_dhcpd.conf
 │   │   │   ├── serv2_01-network-manager-all.yaml
-│   │   │   └── serv2_dhcpd.conf
+│   │   │   ├── serv2_dhcpd.conf
+│   │   │   └── servers_isc-dhcp-server
 │   │   ├── dhcp_samba
 │   │   │   ├── smb.conf
 │   │   │   └── theroy.md
@@ -172,6 +168,7 @@ LinuxCommands
 │   │   │   ├── dynamic-network.conf
 │   │   │   ├── static-network.conf
 │   │   │   └── theory.md
+│   │   ├── commands.md
 │   │   └── theory.md
 │   ├── system_data
 │   │   ├── packet_install_theory.md
@@ -181,8 +178,15 @@ LinuxCommands
 ├── users_permissions
 │   ├── system_users.md
 │   └── user_gestion.md
-└── virtual_private_network_openvpn
-    └── commands.md
+├── virtual_private_network_openvpn
+│   └── commands.md
+├── .gitignore
+├── CONTRIBUTING.md
+├── INFO.md
+├── KEYWORD.md
+├── LICENSE
+├── README.md
+└── SECURITY.md
 ```
 <!--
 </div>
